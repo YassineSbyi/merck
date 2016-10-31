@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04573CD41DC79E0D00267396 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573CD31DC79E0D00267396 /* main.m */; };
+		04573CD71DC79E0D00267396 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573CD61DC79E0D00267396 /* AppDelegate.m */; };
+		04573CDA1DC79E0D00267396 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573CD91DC79E0D00267396 /* ViewController.m */; };
+		04573CDD1DC79E0E00267396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04573CDB1DC79E0E00267396 /* Main.storyboard */; };
+		04573CDF1DC79E0E00267396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04573CDE1DC79E0E00267396 /* Assets.xcassets */; };
+		04573CE21DC79E0E00267396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04573CE01DC79E0E00267396 /* LaunchScreen.storyboard */; };
+		04573CED1DC79E0E00267396 /* merckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573CEC1DC79E0E00267396 /* merckTests.m */; };
+		04573CF81DC79E0E00267396 /* merckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573CF71DC79E0E00267396 /* merckUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04573CE91DC79E0E00267396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04573CC71DC79E0D00267396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04573CCE1DC79E0D00267396;
+			remoteInfo = merck;
+		};
+		04573CF41DC79E0E00267396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04573CC71DC79E0D00267396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04573CCE1DC79E0D00267396;
+			remoteInfo = merck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04573CCF1DC79E0D00267396 /* merck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = merck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04573CD31DC79E0D00267396 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04573CD51DC79E0D00267396 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04573CD61DC79E0D00267396 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04573CD81DC79E0D00267396 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04573CD91DC79E0D00267396 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04573CDC1DC79E0E00267396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04573CDE1DC79E0E00267396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04573CE11DC79E0E00267396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04573CE31DC79E0E00267396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04573CE81DC79E0E00267396 /* merckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = merckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04573CEC1DC79E0E00267396 /* merckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = merckTests.m; sourceTree = "<group>"; };
+		04573CEE1DC79E0E00267396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04573CF31DC79E0E00267396 /* merckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = merckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04573CF71DC79E0E00267396 /* merckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = merckUITests.m; sourceTree = "<group>"; };
+		04573CF91DC79E0E00267396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04573CCC1DC79E0D00267396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04573CE51DC79E0E00267396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04573CF01DC79E0E00267396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04573CC61DC79E0D00267396 = {
+			isa = PBXGroup;
+			children = (
+				04573CD11DC79E0D00267396 /* merck */,
+				04573CEB1DC79E0E00267396 /* merckTests */,
+				04573CF61DC79E0E00267396 /* merckUITests */,
+				04573CD01DC79E0D00267396 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04573CD01DC79E0D00267396 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04573CCF1DC79E0D00267396 /* merck.app */,
+				04573CE81DC79E0E00267396 /* merckTests.xctest */,
+				04573CF31DC79E0E00267396 /* merckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04573CD11DC79E0D00267396 /* merck */ = {
+			isa = PBXGroup;
+			children = (
+				04573CD51DC79E0D00267396 /* AppDelegate.h */,
+				04573CD61DC79E0D00267396 /* AppDelegate.m */,
+				04573CD81DC79E0D00267396 /* ViewController.h */,
+				04573CD91DC79E0D00267396 /* ViewController.m */,
+				04573CDB1DC79E0E00267396 /* Main.storyboard */,
+				04573CDE1DC79E0E00267396 /* Assets.xcassets */,
+				04573CE01DC79E0E00267396 /* LaunchScreen.storyboard */,
+				04573CE31DC79E0E00267396 /* Info.plist */,
+				04573CD21DC79E0D00267396 /* Supporting Files */,
+			);
+			path = merck;
+			sourceTree = "<group>";
+		};
+		04573CD21DC79E0D00267396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04573CD31DC79E0D00267396 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04573CEB1DC79E0E00267396 /* merckTests */ = {
+			isa = PBXGroup;
+			children = (
+				04573CEC1DC79E0E00267396 /* merckTests.m */,
+				04573CEE1DC79E0E00267396 /* Info.plist */,
+			);
+			path = merckTests;
+			sourceTree = "<group>";
+		};
+		04573CF61DC79E0E00267396 /* merckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04573CF71DC79E0E00267396 /* merckUITests.m */,
+				04573CF91DC79E0E00267396 /* Info.plist */,
+			);
+			path = merckUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04573CCE1DC79E0D00267396 /* merck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04573CFC1DC79E0E00267396 /* Build configuration list for PBXNativeTarget "merck" */;
+			buildPhases = (
+				04573CCB1DC79E0D00267396 /* Sources */,
+				04573CCC1DC79E0D00267396 /* Frameworks */,
+				04573CCD1DC79E0D00267396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = merck;
+			productName = merck;
+			productReference = 04573CCF1DC79E0D00267396 /* merck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04573CE71DC79E0E00267396 /* merckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04573CFF1DC79E0E00267396 /* Build configuration list for PBXNativeTarget "merckTests" */;
+			buildPhases = (
+				04573CE41DC79E0E00267396 /* Sources */,
+				04573CE51DC79E0E00267396 /* Frameworks */,
+				04573CE61DC79E0E00267396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04573CEA1DC79E0E00267396 /* PBXTargetDependency */,
+			);
+			name = merckTests;
+			productName = merckTests;
+			productReference = 04573CE81DC79E0E00267396 /* merckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04573CF21DC79E0E00267396 /* merckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04573D021DC79E0E00267396 /* Build configuration list for PBXNativeTarget "merckUITests" */;
+			buildPhases = (
+				04573CEF1DC79E0E00267396 /* Sources */,
+				04573CF01DC79E0E00267396 /* Frameworks */,
+				04573CF11DC79E0E00267396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04573CF51DC79E0E00267396 /* PBXTargetDependency */,
+			);
+			name = merckUITests;
+			productName = merckUITests;
+			productReference = 04573CF31DC79E0E00267396 /* merckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04573CC71DC79E0D00267396 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04573CCE1DC79E0D00267396 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BDFCN6A9W3;
+						ProvisioningStyle = Automatic;
+					};
+					04573CE71DC79E0E00267396 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BDFCN6A9W3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04573CCE1DC79E0D00267396;
+					};
+					04573CF21DC79E0E00267396 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BDFCN6A9W3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04573CCE1DC79E0D00267396;
+					};
+				};
+			};
+			buildConfigurationList = 04573CCA1DC79E0D00267396 /* Build configuration list for PBXProject "merck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04573CC61DC79E0D00267396;
+			productRefGroup = 04573CD01DC79E0D00267396 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04573CCE1DC79E0D00267396 /* merck */,
+				04573CE71DC79E0E00267396 /* merckTests */,
+				04573CF21DC79E0E00267396 /* merckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04573CCD1DC79E0D00267396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04573CE21DC79E0E00267396 /* LaunchScreen.storyboard in Resources */,
+				04573CDF1DC79E0E00267396 /* Assets.xcassets in Resources */,
+				04573CDD1DC79E0E00267396 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04573CE61DC79E0E00267396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04573CF11DC79E0E00267396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04573CCB1DC79E0D00267396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04573CDA1DC79E0D00267396 /* ViewController.m in Sources */,
+				04573CD71DC79E0D00267396 /* AppDelegate.m in Sources */,
+				04573CD41DC79E0D00267396 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04573CE41DC79E0E00267396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04573CED1DC79E0E00267396 /* merckTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04573CEF1DC79E0E00267396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04573CF81DC79E0E00267396 /* merckUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04573CEA1DC79E0E00267396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04573CCE1DC79E0D00267396 /* merck */;
+			targetProxy = 04573CE91DC79E0E00267396 /* PBXContainerItemProxy */;
+		};
+		04573CF51DC79E0E00267396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04573CCE1DC79E0D00267396 /* merck */;
+			targetProxy = 04573CF41DC79E0E00267396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04573CDB1DC79E0E00267396 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04573CDC1DC79E0E00267396 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04573CE01DC79E0E00267396 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04573CE11DC79E0E00267396 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04573CFA1DC79E0E00267396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04573CFB1DC79E0E00267396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04573CFD1DC79E0E00267396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BDFCN6A9W3;
+				INFOPLIST_FILE = merck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Firstak.merck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04573CFE1DC79E0E00267396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BDFCN6A9W3;
+				INFOPLIST_FILE = merck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Firstak.merck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04573D001DC79E0E00267396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BDFCN6A9W3;
+				INFOPLIST_FILE = merckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Firstak.merckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/merck.app/merck";
+			};
+			name = Debug;
+		};
+		04573D011DC79E0E00267396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BDFCN6A9W3;
+				INFOPLIST_FILE = merckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Firstak.merckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/merck.app/merck";
+			};
+			name = Release;
+		};
+		04573D031DC79E0E00267396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BDFCN6A9W3;
+				INFOPLIST_FILE = merckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Firstak.merckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = merck;
+			};
+			name = Debug;
+		};
+		04573D041DC79E0E00267396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BDFCN6A9W3;
+				INFOPLIST_FILE = merckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Firstak.merckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = merck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04573CCA1DC79E0D00267396 /* Build configuration list for PBXProject "merck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04573CFA1DC79E0E00267396 /* Debug */,
+				04573CFB1DC79E0E00267396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04573CFC1DC79E0E00267396 /* Build configuration list for PBXNativeTarget "merck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04573CFD1DC79E0E00267396 /* Debug */,
+				04573CFE1DC79E0E00267396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04573CFF1DC79E0E00267396 /* Build configuration list for PBXNativeTarget "merckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04573D001DC79E0E00267396 /* Debug */,
+				04573D011DC79E0E00267396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04573D021DC79E0E00267396 /* Build configuration list for PBXNativeTarget "merckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04573D031DC79E0E00267396 /* Debug */,
+				04573D041DC79E0E00267396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04573CC71DC79E0D00267396 /* Project object */;
+}
