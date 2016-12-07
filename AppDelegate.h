@@ -1,0 +1,17 @@
+//
+//  AppDelegate.h
+//  merck
+//
+//  Created by mac on 31/10/2016.
+//  Copyright © 2016 mac. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+
+@end
+

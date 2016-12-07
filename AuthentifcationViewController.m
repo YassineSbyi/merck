@@ -13,7 +13,8 @@
 #import "UserDatabase.h"
 #import "NSString+MD5.h"
 #import "MBProgressHUD.h"
-#import "ProfileViewController.h"
+@import FirebaseInstanceID;
+@import FirebaseMessaging;
 static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/logins" ;
 
 
@@ -24,58 +25,29 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    self.view.backgroundColor = [UIColor colorWithRed:0.00 green:0.40 blue:0.71 alpha:1.0];
-    self.loginBtn.backgroundColor = [UIColor colorWithRed:0.64 green:0.80 blue:0.25 alpha:1.0];
-    
-    
-    self.emailField.backgroundColor = [UIColor clearColor];
-    self.emailField.borderStyle = UITextBorderStyleNone;
-    
-    CALayer *emailBorder = [CALayer layer];
-    CALayer *pwdBorder = [CALayer layer];
-
-    CGFloat borderWidth = 1;
-    
-    emailBorder.borderColor = [UIColor whiteColor].CGColor;
-    emailBorder.frame = CGRectMake(0,self.emailField.frame.size.height - borderWidth, self.emailField.frame.size.width,self.emailField.frame.size.height);
-    emailBorder.borderWidth = borderWidth;
-    [self.emailField.layer addSublayer:emailBorder];
-    self.emailField.layer.masksToBounds=YES;
-    self. emailField.leftViewMode = UITextFieldViewModeAlways;
-    self. emailField.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"yourImagename.png"]];
-    
-    NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"Email" attributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }];
-    self.emailField.attributedPlaceholder = str;
-    
-    self.password.backgroundColor = [UIColor clearColor];
-    self.password.borderStyle = UITextBorderStyleNone;
-    
-    pwdBorder.borderColor = [UIColor whiteColor].CGColor;
-    pwdBorder.frame = CGRectMake(0,self.password.frame.size.height - borderWidth, self.password.frame.size.width,self.password.frame.size.height);
-    pwdBorder.borderWidth = borderWidth;
-    [self.password.layer addSublayer:pwdBorder];
-    self.password.layer.masksToBounds=YES;
-    
-    
-    NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-    self.forgetPwd.attributedText = [[NSAttributedString alloc] initWithString:@"Mot de passe publié" attributes:underlineAttribute];
-    self.forgetPwd.textColor = [UIColor whiteColor];
-    
-    
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
 - (IBAction)login:(id)sender {
-    NSLog(@"get started clicked");
-    
-    //   NSDictionary *parameters = @{@"email": @"dammak@gmail.com", @"password": @"e10adc3949ba59abbe56e057f20f883e"};
-    User *_user = [[User alloc] init];
+    NSString *token = [[FIRInstanceID instanceID] token];
+    NSLog(@"InstanceID token: %@", token);
+ //   NSDictionary *parameters = @{@"email": @"dammak@gmail.com", @"password": @"e10adc3949ba59abbe56e057f20f883e"};
+   User *_user = [[User alloc] init];
     if ([_emailField.text isEqualToString:@""] || [_password.text isEqualToString:@""])
     {
         
@@ -92,7 +64,7 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
                                         //Handel your yes please button action here
                                         [MBProgressHUD hideHUDForView:self.view animated:YES];
                                         [alert dismissViewControllerAnimated:YES completion:nil];
-                                        
+                                   
                                     }];
         
         [alert addAction:yesButton];
@@ -101,21 +73,22 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
         
         return;
     }else{
-        _user.email = _emailField.text;
-        _user.password = [_password.text MD5Digest];
+    _user.email = _emailField.text;
+      _user.password = [_password.text MD5Digest];
+    
+     NSDictionary *parameters = @{@"email": _emailField.text, @"password":[_password.text MD5Digest] };
+    
+    
+       NSLog(@"user: %@", [_user dictionaryRepresentation]);
+    NSURL *URL = [NSURL URLWithString:BaseURLString];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:URL.absoluteString parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         
-        NSDictionary *parameters = @{@"email": _emailField.text, @"password":[_password.text MD5Digest] };
-        
-        
-        NSURL *URL = [NSURL URLWithString:BaseURLString];
-        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-        [manager POST:URL.absoluteString parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-            
             // Set Artists and refresh result list
             if (responseObject != nil) {
-                
+
                 User *user = [[User alloc] initWithDictionary:responseObject[@"delegue"]];
-                
+
                 if (user.internalBaseClassIdentifier != 0) {
                     NSMutableArray *loadedUsers = [[NSMutableArray alloc] init];
                     
@@ -127,8 +100,8 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
                     
                     if([loadedUsers count] == 0) {
                         [userDoc saveData];
-                        NSLog(@"load user : %@", userDoc.Data.email);
-                        
+                         NSLog(@"load user : %@", userDoc.Data.email);
+               
                         
                     } else {
                         UserDoc *prevUserDoc = [[UserDoc alloc] init];
@@ -139,14 +112,9 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
                         
                         [userDoc saveData];
                         
+           
                     }
                     
-                    UIStoryboard *storyboard =
-                    [UIStoryboard storyboardWithName:@"Main"
-                                              bundle:[NSBundle mainBundle]];
-                                                
-                    UIViewController *profile = [storyboard instantiateViewControllerWithIdentifier:@"ProfileViewController"];
-                    [[self navigationController] pushViewController:profile animated:YES];
                     
                 } else {
                     UIAlertController * alert=   [UIAlertController
@@ -162,7 +130,7 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
                                                     //Handel your yes please button action here
                                                     [MBProgressHUD hideHUDForView:self.view animated:YES];
                                                     [alert dismissViewControllerAnimated:YES completion:nil];
-                                                    
+                                                  
                                                 }];
                     
                     
@@ -175,13 +143,13 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
             } else {
                 NSLog(@"NO USER");
             }
-            
-        } failure:^(NSURLSessionTask *operation, NSError *error) {
-            NSLog(@"Error: %@", error);
-            
-        }
-         ];
         
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+
+}
+     ];
+   
     }}
 @end
 
