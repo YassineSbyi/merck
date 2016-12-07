@@ -15,6 +15,18 @@
 		04573CE21DC79E0E00267396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04573CE01DC79E0E00267396 /* LaunchScreen.storyboard */; };
 		04573CED1DC79E0E00267396 /* merckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573CEC1DC79E0E00267396 /* merckTests.m */; };
 		04573CF81DC79E0E00267396 /* merckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573CF71DC79E0E00267396 /* merckUITests.m */; };
+		04573D091DC8E5CC00267396 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573D081DC8E5CC00267396 /* UserService.m */; };
+		04573D0D1DCB6FF400267396 /* HTTPGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573D0C1DCB6FF400267396 /* HTTPGetRequest.m */; };
+		04573D101DCB707A00267396 /* HTTPPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573D0F1DCB707A00267396 /* HTTPPostRequest.m */; };
+		04A52CDA1DD4840A00F7239E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A52CD91DD4840A00F7239E /* User.m */; };
+		04A52CE71DEF2D9F00F7239E /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A52CE61DEF2D9F00F7239E /* NSString+MD5.m */; };
+		04A52CEA1DF069C400F7239E /* UserDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A52CE91DF069C400F7239E /* UserDoc.m */; };
+		04A52CED1DF07D0000F7239E /* UserDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A52CEC1DF07D0000F7239E /* UserDatabase.m */; };
+		04A52CF01DF57C0D00F7239E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A52CEF1DF57C0D00F7239E /* ProfileViewController.m */; };
+		721EC9481DF5C44600B16725 /* AuthentifcationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721EC9471DF5C44500B16725 /* AuthentifcationViewController.m */; };
+		721EC94C1DF5D44F00B16725 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721EC94B1DF5D44F00B16725 /* Storyboard.storyboard */; };
+		72B03A291DF5BE6E00FA82D5 /* ServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B03A281DF5BE6E00FA82D5 /* ServerConnection.m */; };
+		936A75BC3331E1FCFB7BBC04 /* libPods-merck.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0B1CD49A93DD4A1E9E5E71 /* libPods-merck.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,31 @@
 		04573CF31DC79E0E00267396 /* merckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = merckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04573CF71DC79E0E00267396 /* merckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = merckUITests.m; sourceTree = "<group>"; };
 		04573CF91DC79E0E00267396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04573D071DC8E5CC00267396 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserService.h; path = Services/UserService.h; sourceTree = "<group>"; };
+		04573D081DC8E5CC00267396 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserService.m; path = Services/UserService.m; sourceTree = "<group>"; };
+		04573D0B1DCB6FF400267396 /* HTTPGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPGetRequest.h; sourceTree = "<group>"; };
+		04573D0C1DCB6FF400267396 /* HTTPGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPGetRequest.m; sourceTree = "<group>"; };
+		04573D0E1DCB707A00267396 /* HTTPPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPPostRequest.h; sourceTree = "<group>"; };
+		04573D0F1DCB707A00267396 /* HTTPPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPPostRequest.m; sourceTree = "<group>"; };
+		04A52CD61DD2122D00F7239E /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		04A52CD81DD4840A00F7239E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		04A52CD91DD4840A00F7239E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		04A52CE51DEF2D9F00F7239E /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		04A52CE61DEF2D9F00F7239E /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		04A52CE81DF069C400F7239E /* UserDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDoc.h; sourceTree = "<group>"; };
+		04A52CE91DF069C400F7239E /* UserDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDoc.m; sourceTree = "<group>"; };
+		04A52CEB1DF07D0000F7239E /* UserDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDatabase.h; sourceTree = "<group>"; };
+		04A52CEC1DF07D0000F7239E /* UserDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDatabase.m; sourceTree = "<group>"; };
+		04A52CEE1DF57C0D00F7239E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		04A52CEF1DF57C0D00F7239E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		721EC9461DF5C44500B16725 /* AuthentifcationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthentifcationViewController.h; sourceTree = "<group>"; };
+		721EC9471DF5C44500B16725 /* AuthentifcationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthentifcationViewController.m; sourceTree = "<group>"; };
+		721EC94B1DF5D44F00B16725 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		72B03A271DF5BE6E00FA82D5 /* ServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConnection.h; sourceTree = "<group>"; };
+		72B03A281DF5BE6E00FA82D5 /* ServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerConnection.m; sourceTree = "<group>"; };
+		7B0B1CD49A93DD4A1E9E5E71 /* libPods-merck.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-merck.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C4D0055BA8FB1B08845044 /* Pods-merck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-merck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-merck/Pods-merck.debug.xcconfig"; sourceTree = "<group>"; };
+		F3177747CAAA5B8407C903FC /* Pods-merck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-merck.release.xcconfig"; path = "Pods/Target Support Files/Pods-merck/Pods-merck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936A75BC3331E1FCFB7BBC04 /* libPods-merck.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +123,8 @@
 				04573CEB1DC79E0E00267396 /* merckTests */,
 				04573CF61DC79E0E00267396 /* merckUITests */,
 				04573CD01DC79E0D00267396 /* Products */,
+				F2EBEC79FBE810E4545B15C4 /* Pods */,
+				FDDE800FF307E44C49B1E656 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +141,24 @@
 		04573CD11DC79E0D00267396 /* merck */ = {
 			isa = PBXGroup;
 			children = (
+				04A52CE41DEF2D2C00F7239E /* helper */,
+				04A52CE31DEF2BCD00F7239E /* services */,
+				04A52CD71DD32B4600F7239E /* Entites */,
+				04573D0A1DCB6F9A00267396 /* RestHelper */,
 				04573CD51DC79E0D00267396 /* AppDelegate.h */,
 				04573CD61DC79E0D00267396 /* AppDelegate.m */,
 				04573CD81DC79E0D00267396 /* ViewController.h */,
 				04573CD91DC79E0D00267396 /* ViewController.m */,
 				04573CDB1DC79E0E00267396 /* Main.storyboard */,
+				721EC94B1DF5D44F00B16725 /* Storyboard.storyboard */,
 				04573CDE1DC79E0E00267396 /* Assets.xcassets */,
 				04573CE01DC79E0E00267396 /* LaunchScreen.storyboard */,
 				04573CE31DC79E0E00267396 /* Info.plist */,
 				04573CD21DC79E0D00267396 /* Supporting Files */,
+				04A52CEE1DF57C0D00F7239E /* ProfileViewController.h */,
+				04A52CEF1DF57C0D00F7239E /* ProfileViewController.m */,
+				721EC9461DF5C44500B16725 /* AuthentifcationViewController.h */,
+				721EC9471DF5C44500B16725 /* AuthentifcationViewController.m */,
 			);
 			path = merck;
 			sourceTree = "<group>";
@@ -140,6 +189,68 @@
 			path = merckUITests;
 			sourceTree = "<group>";
 		};
+		04573D0A1DCB6F9A00267396 /* RestHelper */ = {
+			isa = PBXGroup;
+			children = (
+				04573D0B1DCB6FF400267396 /* HTTPGetRequest.h */,
+				04573D0C1DCB6FF400267396 /* HTTPGetRequest.m */,
+				04573D0E1DCB707A00267396 /* HTTPPostRequest.h */,
+				04573D0F1DCB707A00267396 /* HTTPPostRequest.m */,
+			);
+			name = RestHelper;
+			sourceTree = "<group>";
+		};
+		04A52CD71DD32B4600F7239E /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				04A52CD81DD4840A00F7239E /* User.h */,
+				04A52CD91DD4840A00F7239E /* User.m */,
+			);
+			name = Entites;
+			sourceTree = "<group>";
+		};
+		04A52CE31DEF2BCD00F7239E /* services */ = {
+			isa = PBXGroup;
+			children = (
+				04573D071DC8E5CC00267396 /* UserService.h */,
+				04573D081DC8E5CC00267396 /* UserService.m */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		04A52CE41DEF2D2C00F7239E /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				04A52CD61DD2122D00F7239E /* AppConstant.h */,
+				04A52CE51DEF2D9F00F7239E /* NSString+MD5.h */,
+				04A52CE61DEF2D9F00F7239E /* NSString+MD5.m */,
+				04A52CE81DF069C400F7239E /* UserDoc.h */,
+				04A52CE91DF069C400F7239E /* UserDoc.m */,
+				04A52CEB1DF07D0000F7239E /* UserDatabase.h */,
+				04A52CEC1DF07D0000F7239E /* UserDatabase.m */,
+				72B03A271DF5BE6E00FA82D5 /* ServerConnection.h */,
+				72B03A281DF5BE6E00FA82D5 /* ServerConnection.m */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		F2EBEC79FBE810E4545B15C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1C4D0055BA8FB1B08845044 /* Pods-merck.debug.xcconfig */,
+				F3177747CAAA5B8407C903FC /* Pods-merck.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FDDE800FF307E44C49B1E656 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B0B1CD49A93DD4A1E9E5E71 /* libPods-merck.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04573CFC1DC79E0E00267396 /* Build configuration list for PBXNativeTarget "merck" */;
 			buildPhases = (
+				B22265C7B27429BF21EF27C5 /* [CP] Check Pods Manifest.lock */,
 				04573CCB1DC79E0D00267396 /* Sources */,
 				04573CCC1DC79E0D00267396 /* Frameworks */,
 				04573CCD1DC79E0D00267396 /* Resources */,
+				602E52667CDC22A7309B55D5 /* [CP] Embed Pods Frameworks */,
+				0D556C957816A8B9D9FC0C0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04573CE21DC79E0E00267396 /* LaunchScreen.storyboard in Resources */,
+				721EC94C1DF5D44F00B16725 /* Storyboard.storyboard in Resources */,
 				04573CDF1DC79E0E00267396 /* Assets.xcassets in Resources */,
 				04573CDD1DC79E0E00267396 /* Main.storyboard in Resources */,
 			);
@@ -271,14 +386,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D556C957816A8B9D9FC0C0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-merck/Pods-merck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		602E52667CDC22A7309B55D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-merck/Pods-merck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22265C7B27429BF21EF27C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04573CCB1DC79E0D00267396 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04573D091DC8E5CC00267396 /* UserService.m in Sources */,
+				04A52CDA1DD4840A00F7239E /* User.m in Sources */,
+				72B03A291DF5BE6E00FA82D5 /* ServerConnection.m in Sources */,
+				04573D0D1DCB6FF400267396 /* HTTPGetRequest.m in Sources */,
+				04A52CE71DEF2D9F00F7239E /* NSString+MD5.m in Sources */,
 				04573CDA1DC79E0D00267396 /* ViewController.m in Sources */,
 				04573CD71DC79E0D00267396 /* AppDelegate.m in Sources */,
 				04573CD41DC79E0D00267396 /* main.m in Sources */,
+				04A52CEA1DF069C400F7239E /* UserDoc.m in Sources */,
+				04573D101DCB707A00267396 /* HTTPPostRequest.m in Sources */,
+				04A52CED1DF07D0000F7239E /* UserDatabase.m in Sources */,
+				721EC9481DF5C44600B16725 /* AuthentifcationViewController.m in Sources */,
+				04A52CF01DF57C0D00F7239E /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +598,26 @@
 		};
 		04573CFD1DC79E0E00267396 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C4D0055BA8FB1B08845044 /* Pods-merck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BDFCN6A9W3;
 				INFOPLIST_FILE = merck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Firstak.merck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -437,11 +625,26 @@
 		};
 		04573CFE1DC79E0E00267396 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3177747CAAA5B8407C903FC /* Pods-merck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BDFCN6A9W3;
 				INFOPLIST_FILE = merck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Firstak.merck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -516,6 +719,7 @@
 				04573CFE1DC79E0E00267396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04573CFF1DC79E0E00267396 /* Build configuration list for PBXNativeTarget "merckTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +728,7 @@
 				04573D011DC79E0E00267396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04573D021DC79E0E00267396 /* Build configuration list for PBXNativeTarget "merckUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +737,7 @@
 				04573D041DC79E0E00267396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
