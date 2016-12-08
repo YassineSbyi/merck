@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:merck/AuthentifcationViewController.h">
-   </FileRef>
-   <FileRef
-      location = "group:merck/AuthentifcationViewController.m">
-   </FileRef>
-   <FileRef
       location = "group:merck.xcodeproj">
    </FileRef>
    <FileRef

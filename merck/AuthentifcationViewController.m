@@ -14,6 +14,7 @@
 #import "NSString+MD5.h"
 #import "MBProgressHUD.h"
 #import "ProfileViewController.h"
+#import "ServerConnection.h"
 static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/logins" ;
 
 
@@ -24,7 +25,8 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.emailField.text = @"mehdi@mehdi.com";
+    self.password.text = @"mehdi";
     
     self.view.backgroundColor = [UIColor colorWithRed:0.00 green:0.40 blue:0.71 alpha:1.0];
     self.loginBtn.backgroundColor = [UIColor colorWithRed:0.64 green:0.80 blue:0.25 alpha:1.0];
@@ -105,11 +107,12 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
         _user.password = [_password.text MD5Digest];
         
         NSDictionary *parameters = @{@"email": _emailField.text, @"password":[_password.text MD5Digest] };
+        ServerConnection *service = [[ServerConnection alloc] init];
         
-        
-        NSURL *URL = [NSURL URLWithString:BaseURLString];
-        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-        [manager POST:URL.absoluteString parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+     //   NSURL *URL = [NSURL URLWithString:BaseURLString];
+       // AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+        [service addUserWithDictionary:parameters completionBlock:^(id responseObject, NSError *error) {
+            //   [manager POST:URL.absoluteString parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
             
             // Set Artists and refresh result list
             if (responseObject != nil) {
@@ -176,10 +179,10 @@ static NSString * const BaseURLString = @"http://firstak.com/merck/web/api/login
                 NSLog(@"NO USER");
             }
             
-        } failure:^(NSURLSessionTask *operation, NSError *error) {
-            NSLog(@"Error: %@", error);
+        }// failure:^(NSURLSessionTask *operation, NSError *error) {
+          //  NSLog(@"Error: %@", error);
             
-        }
+      //  }
          ];
         
     }}

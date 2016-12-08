@@ -15,7 +15,6 @@
 		04573CE21DC79E0E00267396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04573CE01DC79E0E00267396 /* LaunchScreen.storyboard */; };
 		04573CED1DC79E0E00267396 /* merckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573CEC1DC79E0E00267396 /* merckTests.m */; };
 		04573CF81DC79E0E00267396 /* merckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573CF71DC79E0E00267396 /* merckUITests.m */; };
-		04573D091DC8E5CC00267396 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573D081DC8E5CC00267396 /* UserService.m */; };
 		04573D0D1DCB6FF400267396 /* HTTPGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573D0C1DCB6FF400267396 /* HTTPGetRequest.m */; };
 		04573D101DCB707A00267396 /* HTTPPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04573D0F1DCB707A00267396 /* HTTPPostRequest.m */; };
 		04A52CDA1DD4840A00F7239E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A52CD91DD4840A00F7239E /* User.m */; };
@@ -63,8 +62,6 @@
 		04573CF31DC79E0E00267396 /* merckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = merckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04573CF71DC79E0E00267396 /* merckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = merckUITests.m; sourceTree = "<group>"; };
 		04573CF91DC79E0E00267396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04573D071DC8E5CC00267396 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserService.h; path = Services/UserService.h; sourceTree = "<group>"; };
-		04573D081DC8E5CC00267396 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserService.m; path = Services/UserService.m; sourceTree = "<group>"; };
 		04573D0B1DCB6FF400267396 /* HTTPGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPGetRequest.h; sourceTree = "<group>"; };
 		04573D0C1DCB6FF400267396 /* HTTPGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPGetRequest.m; sourceTree = "<group>"; };
 		04573D0E1DCB707A00267396 /* HTTPPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPPostRequest.h; sourceTree = "<group>"; };
@@ -142,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				04A52CE41DEF2D2C00F7239E /* helper */,
-				04A52CE31DEF2BCD00F7239E /* services */,
 				04A52CD71DD32B4600F7239E /* Entites */,
 				04573D0A1DCB6F9A00267396 /* RestHelper */,
 				04573CD51DC79E0D00267396 /* AppDelegate.h */,
@@ -207,15 +203,6 @@
 				04A52CD91DD4840A00F7239E /* User.m */,
 			);
 			name = Entites;
-			sourceTree = "<group>";
-		};
-		04A52CE31DEF2BCD00F7239E /* services */ = {
-			isa = PBXGroup;
-			children = (
-				04573D071DC8E5CC00267396 /* UserService.h */,
-				04573D081DC8E5CC00267396 /* UserService.m */,
-			);
-			name = services;
 			sourceTree = "<group>";
 		};
 		04A52CE41DEF2D2C00F7239E /* helper */ = {
@@ -439,7 +426,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04573D091DC8E5CC00267396 /* UserService.m in Sources */,
 				04A52CDA1DD4840A00F7239E /* User.m in Sources */,
 				72B03A291DF5BE6E00FA82D5 /* ServerConnection.m in Sources */,
 				04573D0D1DCB6FF400267396 /* HTTPGetRequest.m in Sources */,

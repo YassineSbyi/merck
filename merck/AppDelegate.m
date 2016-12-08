@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "AppDelegate.h"
+#import "ServerConnection.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ServerConnection *service = [[ServerConnection alloc] init];
+    
+    //   NSURL *URL = [NSURL URLWithString:BaseURLString];
+    // AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [service getcompagnebydelegues:@"1" completionBlock:^(id responseObject, NSError *error) {
+   
+        
+        // Set Artists and refresh result list
+        if (responseObject != nil) {
+        }}];
     return YES;
 }
 
